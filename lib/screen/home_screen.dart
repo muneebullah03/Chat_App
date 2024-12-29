@@ -41,7 +41,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Widget _buildUserList() {
     return StreamBuilder(
-        stream: chatServices.getUserStrem(),
+        stream: chatServices.getAllUsersExcludingBlockUsers(),
         builder: (context, snapshot) {
           // error
           if (snapshot.hasError) {

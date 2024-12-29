@@ -123,6 +123,8 @@ class _ChatScreenState extends State<ChatScreen> {
           ChatBubles(
             message: data["message"],
             isCurrentUser: iscurrentUser,
+            messageId: docs.id,
+            userId: docs["senderId"],
           )
         ],
       ),
